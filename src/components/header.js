@@ -14,11 +14,25 @@ const Header = () => {
 }
 
 const styles = StyleSheet.create({
-    viewStyle:{
-        backgroundColor: '#F8F8F8'
+    viewStyle: {
+        backgroundColor: '#F8F8F8',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: 60,
+        paddingTop: 15,
+
+        // shadow for IOS
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 200 },
+        shadowOpacity: 0.2,
+        // shadow for Android
+        elevation: 2,
+        
+        position: 'relative'
     },
     textStyle: {
         fontSize: 20,
+        height: 20
     },
 });
 
